@@ -1,0 +1,28 @@
+---
+// Features-D: Modern Checklist - Limpo e focado em benefícios
+interface Item { icon: string; title: string; desc: string; }
+interface Props { title: string; items: Item[]; }
+const { title, items } = Astro.props;
+---
+<section class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-black text-dark tracking-tight">{title}</h2>
+      <div class="h-1.5 w-20 bg-primary mx-auto mt-6 rounded-full"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+      {items.map((item) => (
+        <div class="flex gap-4 group">
+          <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-black text-dark mb-2 tracking-tight uppercase text-xs">{item.title}</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

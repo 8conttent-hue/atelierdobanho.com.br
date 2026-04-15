@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "ATELIERDOBANHO — Bem-vindo ao Ateliê do Banho",
+    "description": "Seu destino para produtos de cosméticos de alta qualidade."
+  },
+  "hero": {
+    "title": "Bem-vindo ao Ateliê do Banho",
+    "subtitle": "Seu destino para produtos de cosméticos de alta qualidade.",
+    "btnText": "Explore Nossa Coleção",
+    "bgImage": "/images/hero.jpg",
+    "btnLink": "/blog"
+  },
+  "features": {
+    "title": "Nossos Diferenciais",
+    "items": [
+      {
+        "icon": "🌱",
+        "title": "Ingredientes Naturais",
+        "desc": "Todos os nossos produtos são feitos com ingredientes naturais e de origem sustentável, garantindo qualidade e respeito ao meio ambiente."
+      },
+      {
+        "icon": "🚚",
+        "title": "Envio Rápido",
+        "desc": "Oferecemos envio para todo o Brasil, garantindo que você receba seus produtos com rapidez e segurança."
+      },
+      {
+        "icon": "💬",
+        "title": "Atendimento Especializado",
+        "desc": "Nossa equipe de atendimento está sempre disponível para ajudar você a encontrar os produtos ideais e tirar suas dúvidas."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre Nós",
+    "desc": "No Ateliê do Banho, acreditamos que cuidar de si mesmo é importante para uma vida saudável e equilibrada. Por isso, selecionamos os melhores cosméticos naturais que não só cuidam da sua beleza, mas também do planeta.",
+    "stats": [
+      {
+        "value": "100%",
+        "label": "Satisfação dos Clientes"
+      },
+      {
+        "value": "500+",
+        "label": "Produtos Disponíveis"
+      },
+      {
+        "value": "10+",
+        "label": "Anos de Experiência"
+      }
+    ],
+    "image": "/images/about.jpg",
+    "btnText": "Saiba Mais",
+    "btnLink": "/sobre"
+  },
+  "posts": {
+    "title": "Últimos Artigos",
+    "limit": 3,
+    "btnText": "Ver Blog",
+    "btnLink": "/blog"
+  }
+}

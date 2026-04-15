@@ -1,0 +1,88 @@
+---
+// Contato-B: Split — formulário esquerda, informações direita
+interface Props {
+  title: string;
+  subtitle: string;
+  email: string;
+  responseTime?: string;
+  content?: string;
+}
+const { title, subtitle, email, responseTime, content } = Astro.props;
+---
+<!-- Hero compacto -->
+<section class="py-16 bg-dark text-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <span class="text-xs font-bold uppercase tracking-widest text-white/40 mb-3 block">Contato</span>
+    <h1 class="text-4xl md:text-5xl font-black">{title}</h1>
+  </div>
+</section>
+
+<!-- Split layout -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-5 gap-12">
+      <!-- Formulário (3 cols) -->
+      <div class="md:col-span-3">
+        <p class="text-gray-500 mb-8 leading-relaxed">{subtitle}</p>
+      {content && <p class="text-gray-500 mt-4 leading-relaxed max-w-2xl mx-auto">{content}</p>}
+        <form class="space-y-5" action="#" method="post">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-dark uppercase tracking-widest mb-2">Nome</label>
+              <input type="text" name="name" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-primary transition-colors"
+                placeholder="Seu nome" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-dark uppercase tracking-widest mb-2">E-mail</label>
+              <input type="email" name="email" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-primary transition-colors"
+                placeholder="seu@email.com" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-dark uppercase tracking-widest mb-2">Assunto</label>
+            <input type="text" name="subject"
+              class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-primary transition-colors"
+              placeholder="Como podemos ajudar?" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-dark uppercase tracking-widest mb-2">Mensagem</label>
+            <textarea name="message" rows="6" required
+              class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-primary transition-colors resize-none"
+              placeholder="Descreva sua dúvida ou sugestão..."></textarea>
+          </div>
+          <button type="submit"
+            class="w-full py-4 bg-primary text-white font-bold rounded-xl hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+            Enviar Mensagem →
+          </button>
+        </form>
+      </div>
+
+      <!-- Info (2 cols) -->
+      <div class="md:col-span-2 space-y-6">
+        <div class="p-6 bg-primary/5 border border-primary/10 rounded-2xl">
+          <div class="text-2xl mb-3">✉️</div>
+          <h3 class="font-bold text-dark mb-1">E-mail</h3>
+          <a href={`mailto:${email}`} class="text-primary text-sm hover:underline">{email}</a>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-2xl">
+          <div class="text-2xl mb-3">⏱️</div>
+          <h3 class="font-bold text-dark mb-1">Tempo de resposta</h3>
+          <p class="text-gray-500 text-sm">{responseTime || 'Respondemos em até 48 horas úteis.'}</p>
+        </div>
+
+        <div class="p-6 bg-gray-50 rounded-2xl">
+          <div class="text-2xl mb-3">📝</div>
+          <h3 class="font-bold text-dark mb-2">Antes de contatar</h3>
+          <ul class="text-gray-500 text-sm space-y-1.5">
+            <li>• Confira nosso blog para dúvidas comuns</li>
+            <li>• Seja específico na sua mensagem</li>
+            <li>• Inclua o máximo de detalhes possível</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

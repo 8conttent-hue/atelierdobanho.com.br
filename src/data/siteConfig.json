@@ -1,0 +1,53 @@
+{
+  "name": "ATELIERDOBANHO",
+  "slug": "atelierdobanho.com.br",
+  "description": "Bem-vindo ao Ateliê do Banho, o seu destino para produtos de cosméticos de alta qualidade! Aqui, oferecemos uma ampla seleção de itens cuidadosamente selecionados para ajudá-lo a cuidar da sua pele, cabelos e corpo. Nossa loja online apresenta uma variedade de cosméticos, desde cremes hidratantes até shampoos e condicionadores de alta qualidade, passando por sabonetes, óleos essenciais e outros produtos para o cuidado pessoal. Todos os nossos produtos são produzidos com ingredientes naturais e de origem sustentável, garantindo que você está cuidando de si mesmo enquanto cuida do planeta. No Ateliê do Banho, estamos comprometidos em fornecer a você a melhor experiência de compra online possível. Navegue em nosso site para encontrar o produto perfeito para você ou presenteie alguém especial. Com envio para todo o Brasil e uma equipe de atendimento ao cliente disponível para ajudá-lo em todas as etapas, estamos aqui para ajudá-lo a cuidar de si mesmo de uma forma consciente e saudável. Experimente o poder dos cosméticos naturais e de qualidade com o Ateliê do Banho – a sua loja online de beleza e bem-estar!",
+  "url": "https://atelierdobanho.com.br",
+  "niche": "Moda e Beleza",
+  "keywords": "Bem vindo ao Atelie do Banho o seu destino para produtos de",
+  "email": "contato@atelierdobanho.com.br",
+  "palette": "forest",
+  "colors": {
+    "primary": "#16a34a",
+    "accent": "#14532d",
+    "dark": "#052e16"
+  },
+  "headerContrast": "light",
+  "font": "inter",
+  "fontFamily": "'Inter', sans-serif",
+  "fontUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
+  "components": {
+    "header": "Header-D",
+    "hero": "Hero-E",
+    "features": "Features-D",
+    "about": "About-B",
+    "posts": "Posts-E",
+    "footer": "Footer-B",
+    "sobre": "Sobre-H",
+    "contato": "Contato-B"
+  },
+  "menu": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Sobre",
+      "href": "/sobre"
+    },
+    {
+      "label": "Contato",
+      "href": "/contato"
+    }
+  ],
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "twitter": "",
+    "youtube": ""
+  }
+}

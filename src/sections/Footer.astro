@@ -1,0 +1,29 @@
+---
+// Footer-B: Centralizado minimalista
+import siteConfig from '../data/siteConfig.json';
+const { name, menu = [] } = siteConfig as any;
+const year = new Date().getFullYear();
+---
+<footer class="bg-gray-50 border-t border-gray-200 py-12">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <!-- Logo -->
+    <a href="/" class="inline-flex items-center gap-2 font-bold text-lg text-dark hover:opacity-80 transition-opacity mb-6">
+      <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white text-sm font-black">
+        {name.charAt(0).toUpperCase()}
+      </div>
+      {name}
+    </a>
+
+    <!-- Links em linha -->
+    <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mb-8">
+      {menu.map((item: any) => (
+        <a href={item.href} class="text-sm text-gray-500 hover:text-primary transition-colors">{item.label}</a>
+      ))}
+      <a href="/privacidade" class="text-sm text-gray-500 hover:text-primary transition-colors">Privacidade</a>
+      <a href="/contato" class="text-sm text-gray-500 hover:text-primary transition-colors">Contato</a>
+    </nav>
+
+    <!-- Copyright -->
+    <p class="text-sm text-gray-400">© {year} {name}. Todos os direitos reservados.</p>
+  </div>
+</footer>

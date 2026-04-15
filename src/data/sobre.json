@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Sobre Nós",
+    "description": "Conheça o ATELIERDOBANHO"
+  },
+  "hero": {
+    "title": "Sobre Nós",
+    "subtitle": "No Ateliê do Banho, acreditamos que cuidar de si mesmo é importante para uma vida saudável e equilibrada. Por isso, selecionamos os melhores cosméticos naturais que não só cuidam da sua beleza, mas também do planeta."
+  },
+  "content": "No Ateliê do Banho, nós entendemos que cuidar de si mesmo vai além da estética. É um ato de amor próprio. Por isso, oferecemos uma linha de produtos que não só realçam a beleza, mas também promovem bem-estar e sustentabilidade.",
+  "mission": "Nossa missão é oferecer produtos de beleza que cuidem não apenas de você, mas também do planeta, por meio de uma escolha consciente e sustentável.",
+  "image": "/images/sobre.jpg",
+  "stats": [
+    {
+      "value": "500+",
+      "label": "Artigos"
+    },
+    {
+      "value": "100k+",
+      "label": "Leitores"
+    },
+    {
+      "value": "5",
+      "label": "Redatores"
+    }
+  ],
+  "team": []
+}
